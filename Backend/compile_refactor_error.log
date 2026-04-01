@@ -1,0 +1,236 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:Backend >-------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ Backend ---
+[INFO] Deleting D:\Bus_Booking\Backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ Backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 44 source files with javac [debug parameters release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[3,8] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[10,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[10,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[10,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[11,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[13,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/BookingConfirmDTO.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/BookingConfirmDTO.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/BookingConfirmDTO.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatLockRequest.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatLockRequest.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatLockRequest.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatStatusResponse.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatStatusResponse.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatStatusResponse.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[5,1] class, interface, enum, or record expected
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.028 s
+[INFO] Finished at: 2026-04-01T12:24:15+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project Backend: Compilation failure: Compilation failure: 
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[3,8] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/BackendApplication.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/BookingController.java:[10,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/DriverController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/OwnerController.java:[10,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[10,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[11,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/controller/SeatController.java:[13,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/AnalyticsDashboardDTO.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/BookingConfirmDTO.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/BookingConfirmDTO.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/BookingConfirmDTO.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/DriverManifestDTO.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatLockRequest.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatLockRequest.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatLockRequest.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatStatusResponse.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatStatusResponse.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/dto/SeatStatusResponse.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Booking.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/SeatStatus.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/model/Trip.java:[8,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[5,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[6,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[7,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/BookingRepository.java:[9,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[1,1] illegal character: '\ufeff'
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[1,10] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[3,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[4,1] class, interface, enum, or record expected
+[ERROR] /D:/Bus_Booking/Backend/src/main/java/repository/SeatStatusRepository.java:[5,1] class, interface, enum, or record expected
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,85 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:Backend >-------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.0:run (default-cli) > test-compile @ Backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ Backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Backend ---
+[INFO] skip non existing resourceDirectory D:\Bus_Booking\Backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ Backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.0:run (default-cli) < test-compile @ Backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.0:run (default-cli) @ Backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2026-04-01T14:03:15.514+05:30  INFO 16212 --- [Backend] [           main] booking.BackendApplication               : Starting BackendApplication using Java 25.0.1 with PID 16212 (D:\Bus_Booking\Backend\target\classes started by arulr in D:\Bus_Booking\Backend)
+2026-04-01T14:03:15.518+05:30  INFO 16212 --- [Backend] [           main] booking.BackendApplication               : No active profile set, falling back to 1 default profile: "default"
+2026-04-01T14:03:16.187+05:30  INFO 16212 --- [Backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01T14:03:16.265+05:30  INFO 16212 --- [Backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 8 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/arulr/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.33/tomcat-embed-core-10.1.33.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-04-01T14:03:16.792+05:30  INFO 16212 --- [Backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-01T14:03:16.807+05:30  INFO 16212 --- [Backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-01T14:03:16.808+05:30  INFO 16212 --- [Backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2026-04-01T14:03:16.869+05:30  INFO 16212 --- [Backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-01T14:03:16.871+05:30  INFO 16212 --- [Backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1291 ms
+2026-04-01T14:03:16.998+05:30  INFO 16212 --- [Backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-01T14:03:17.041+05:30  INFO 16212 --- [Backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2026-04-01T14:03:17.082+05:30  INFO 16212 --- [Backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-01T14:03:17.324+05:30  INFO 16212 --- [Backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01T14:03:17.362+05:30  INFO 16212 --- [Backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-01T14:03:17.554+05:30  INFO 16212 --- [Backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fabef2e
+2026-04-01T14:03:17.556+05:30  INFO 16212 --- [Backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-01T14:03:17.603+05:30  WARN 16212 --- [Backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-01T14:03:17.619+05:30  INFO 16212 --- [Backend] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-01T14:03:18.447+05:30  INFO 16212 --- [Backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01T14:03:18.586+05:30  INFO 16212 --- [Backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01T14:03:18.953+05:30  INFO 16212 --- [Backend] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-04-01T14:03:18.954+05:30  WARN 16212 --- [Backend] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-01T14:03:19.006+05:30  INFO 16212 --- [Backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-01T14:03:19.490+05:30  WARN 16212 --- [Backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01T14:03:20.051+05:30  INFO 16212 --- [Backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-01T14:03:20.061+05:30  INFO 16212 --- [Backend] [           main] booking.BackendApplication               : Started BackendApplication in 5.038 seconds (process running for 5.507)
+Hibernate: select count(*) from users u1_0
+Hibernate: select ss1_0.id,ss1_0.locked_at,ss1_0.locked_by_user_id,ss1_0.seat_number,ss1_0.status,ss1_0.trip_id from seat_status ss1_0 where ss1_0.status='LOCKED' and ss1_0.locked_at<?
+Hibernate: insert into users (created_at,email,full_name,password_hash,phone_number,role) values (?,?,?,?,?,?)
+Hibernate: insert into users (created_at,email,full_name,password_hash,phone_number,role) values (?,?,?,?,?,?)
+Hibernate: insert into owners (business_license_no,company_name,rating,tax_id,user_id) values (?,?,?,?,?)
+Hibernate: insert into users (created_at,email,full_name,password_hash,phone_number,role) values (?,?,?,?,?,?)
+Hibernate: insert into drivers (experience_years,is_verified,license_expiry,license_number,rating,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into buses (created_at,is_active,model_name,owner_id,registration_number,total_seats) values (?,?,?,?,?,?)
+Hibernate: insert into routes (base_price,distance_km,estimated_duration_minutes,from_city,to_city) values (?,?,?,?,?)
+Hibernate: insert into routes (base_price,distance_km,estimated_duration_minutes,from_city,to_city) values (?,?,?,?,?)
