@@ -34,13 +34,13 @@ const Login = () => {
         else if (credentials.role === 'OWNER') navigate('/owner/dashboard');
         else navigate('/passenger/search');
       } else {
-        // Handle Passenger Signup
-        // In a real app we'd call passengerApi.register(credentials)
-        alert('Passenger Account successfully created!');
+        // Handle Signup dynamically
+        await passengerApi.register(credentials);
+        alert('Account successfully created! Please sign in.');
         setIsLogin(true); // Switch back to login view
       }
     } catch (err) {
-      alert(isLogin ? 'Login Failed: Check credentials' : 'Registration Failed');
+      alert(isLogin ? 'Login Failed: Check credentials' : err.response?.data?.message || 'Registration Failed');
     }
   };
 

@@ -16,6 +16,17 @@ export const passengerApi = {
     return response;
   },
 
+  // ✅ REAL — POST /api/v1/auth/register
+  register: async (credentials) => {
+    const response = await apiClient.post('/auth/register', {
+      email: credentials.email,
+      password: credentials.password,
+      fullName: credentials.fullName,
+      role: credentials.role
+    });
+    return response;
+  },
+
   // ✅ REAL — GET /api/v1/routes/search?from=&to=&date=
   searchTrips: async (from, to, date) => {
     const response = await apiClient.get('/routes/search', {
