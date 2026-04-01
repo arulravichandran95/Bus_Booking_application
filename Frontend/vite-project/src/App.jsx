@@ -1,120 +1,60 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import AnalyticsDashboard from './pages/Owner/AnalyticsDashboard'
+import OwnerFleetDashboard from './pages/Owner/OwnerFleetDashboard'
+import ManifestPage from './pages/Driver/ManifestPage'
+import DriverDashboard from './pages/Driver/DriverDashboard'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Home() {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="home-container">
+      <header className="hero-section">
+        <h1>BusSync</h1>
+        <p className="hero-subtitle">The ultimate fleet management and booking solution for modern transporters.</p>
+        
+        <div className="action-cards">
+          <Link to="/owner" className="glass-card nav-card">
+            <div className="icon">📊</div>
+            <h3>Owner Analytics</h3>
+            <p>Access real-time analytics, revenue reports, and fleet insights.</p>
+            <span className="btn-text">View Analytics →</span>
+          </Link>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+          <Link to="/owner/fleet" className="glass-card nav-card">
+            <div className="icon">🚍</div>
+            <h3>Fleet Management</h3>
+            <p>Monitor bus locations, driver details, and vehicle status.</p>
+            <span className="btn-text">Manage Fleet →</span>
+          </Link>
+          
+          <Link to="/driver/dashboard" className="glass-card nav-card">
+            <div className="icon">🚌</div>
+            <h3>Driver Portal</h3>
+            <p>Manage your trips, view passenger manifests, and track your schedule.</p>
+            <span className="btn-text">Enter Dashboard →</span>
+          </Link>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </header>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <footer className="home-footer">
+        <p>&copy; 2026 BusSync Technologies. All rights reserved.</p>
+      </footer>
+    </div>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home  />} />
+        <Route path="/owner" element={<AnalyticsDashboard />} />
+        <Route path="/owner/fleet" element={<OwnerFleetDashboard />} />
+        <Route path="/driver" element={<ManifestPage />} />
+        <Route path="/driver/dashboard" element={<DriverDashboard />} />
+      </Routes>
+    </Router>
   )
 }
 
