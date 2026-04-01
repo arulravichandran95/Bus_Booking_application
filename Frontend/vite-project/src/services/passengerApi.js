@@ -57,6 +57,59 @@ export const passengerApi = {
     };
   },
 
+  getPassengerBookings: async () => {
+    await delay(600);
+    return {
+      data: {
+        upcoming: [
+          {
+            bookingId: "BKG-84729",
+            tripId: "101",
+            busName: "Royal Travels A/C Sleeper",
+            source: "Coimbatore (CBE)",
+            destination: "Chennai (CHN)",
+            date: "2026-04-10",
+            departureTime: "21:00",
+            seats: "A10, A11",
+            amount: 1900,
+            status: "CONFIRMED"
+          }
+        ],
+        past: [
+          {
+            bookingId: "BKG-29384",
+            tripId: "84",
+            busName: "KPN Travels Non-A/C Seater",
+            source: "Chennai (CHN)",
+            destination: "Madurai (IXM)",
+            date: "2026-03-15",
+            departureTime: "10:30",
+            seats: "C4",
+            amount: 750,
+            status: "COMPLETED"
+          },
+          {
+            bookingId: "BKG-11928",
+            tripId: "42",
+            busName: "IntrCity SmartBus",
+            source: "Bangalore (BLR)",
+            destination: "Coimbatore (CBE)",
+            date: "2026-02-28",
+            departureTime: "23:15",
+            seats: "L1, L2",
+            amount: 2200,
+            status: "CANCELLED"
+          }
+        ]
+      }
+    };
+  },
+
+  cancelBooking: async (bookingId) => {
+    await delay(800);
+    return { data: { success: true, message: `Booking ${bookingId} has been canceled successfully.` } };
+  },
+
   getTripStatus: async (tripId) => {
     // Randomize status for demo
     const statuses = ['SCHEDULED', 'IN_PROGRESS'];

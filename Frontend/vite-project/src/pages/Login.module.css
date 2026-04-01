@@ -96,6 +96,39 @@
   font-size: 15px;
 }
 
+.roleTabs {
+  display: flex;
+  background: var(--bg);
+  padding: 4px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border);
+}
+
+.roleTab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: none;
+}
+
+.roleTab:hover {
+  color: var(--text-h);
+}
+
+.activeTab {
+  background: var(--surface);
+  color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
 .inputGroup {
   display: flex;
   flex-direction: column;
@@ -149,4 +182,23 @@
 
 .loginBtn:active {
   transform: translateY(0);
+}
+
+.toggleText {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.toggleLink {
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.toggleLink:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
 }

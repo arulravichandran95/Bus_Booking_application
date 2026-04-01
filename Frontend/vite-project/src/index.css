@@ -29,36 +29,6 @@
   font-family: var(--font-sans);
   color: var(--text);
   background: var(--bg);
-  /* Color Palette - Premium Dark/Light */
-  --primary: #6366f1;
-  --primary-hover: #4f46e5;
-  --bg-main: #f8fafc;
-  --bg-card: rgba(255, 255, 255, 0.8);
-  --text-main: #1e293b;
-  --text-muted: #64748b;
-  --border-color: rgba(226, 232, 240, 0.8);
-  
-  /* Glassmorphism Tokens */
-  --glass-bg: rgba(255, 255, 256, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.3);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-  --blur: 12px;
-
-  /* Typography */
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  
-  font-family: var(--font-sans);
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: var(--text-main);
-  background-color: var(--bg-main);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -128,7 +98,6 @@ a:hover {
   color: var(--primary-hover);
 }
 
-/* Custom Scrollbar for premium feel */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -145,20 +114,9 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text);
-    --primary: #818cf8;
-    --primary-hover: #6366f1;
-    --bg-main: #0f172a;
-    --bg-card: rgba(30, 41, 59, 0.7);
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
-    --border-color: rgba(51, 65, 85, 0.8);
-
-    --glass-bg: rgba(15, 23, 42, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  }
 }
 
+/* Base Styles & Resets */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -171,70 +129,18 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--bg-main);
+  background-color: var(--bg);
   transition: background-color 0.3s ease;
 }
 
 #root {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 /* Premium Card Style Utility */
 .glass-card {
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--blur));
-  -webkit-backdrop-filter: blur(var(--blur));
-  border: 1px solid var(--glass-border);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 16px;
-  box-shadow: var(--glass-shadow);
-}
-
-h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, var(--primary) 0%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-button {
-  border-radius: 12px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 600;
-  font-family: inherit;
-  background-color: var(--primary);
-  color: white;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-button:hover {
-  background-color: var(--primary-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-button:active {
-  transform: translateY(0);
-}
-
-a {
-  font-weight: 500;
-  color: var(--primary);
-  text-decoration: inherit;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--primary-hover);
+  box-shadow: var(--shadow);
 }

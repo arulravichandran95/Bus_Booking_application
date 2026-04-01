@@ -4,8 +4,8 @@ import { dashboardApi } from '../../services/dashboardApi';
 import InsightCard from '../../components/Owner/InsightCard';
 import OccupancyRingChart from '../../components/Owner/OccupancyRingChart';
 import RevenueHeatmap from '../../components/Owner/RevenueHeatmap';
-import { LayoutDashboard, Calendar, Search, RefreshCw } from 'lucide-react';
-
+import { LayoutDashboard, Calendar, Search, RefreshCw, Bus } from 'lucide-react';
+import { Link } from 'react-router-dom';
 const AnalyticsDashboard = () => {
   const [analytics, setAnalytics] = useState(null);
   const [loading, setLoading] = useState(true);

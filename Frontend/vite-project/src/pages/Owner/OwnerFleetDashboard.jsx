@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './OwnerFleetDashboard.module.css';
-import { Bus, User, MapPin, Settings, ChevronLeft, Search, PlusCircle, MoreVertical } from 'lucide-react';
+import { Bus, User, MapPin, Settings, ChevronLeft, Search, PlusCircle, MoreVertical, UserPlus } from 'lucide-react';
 
 const OwnerFleetDashboard = () => {
   const fleetData = [
@@ -75,10 +75,14 @@ const OwnerFleetDashboard = () => {
               <Search size={18} />
               <input type="text" placeholder="Search fleet..." />
            </div>
-           <button className={styles.addBtn}>
+          <Link to="/owner/fleet/add-driver" className={styles.addBtn} style={{ background: 'var(--surface)', color: 'var(--primary)', border: '1px solid var(--primary)' }}>
+              <UserPlus size={20} />
+              <span>Add Driver</span>
+           </Link>
+           <Link to="/owner/fleet/add" className={styles.addBtn}>
               <PlusCircle size={20} />
               <span>Add Vehicle</span>
-           </button>
+           </Link>
         </div>
       </header>
 
@@ -139,7 +143,7 @@ const OwnerFleetDashboard = () => {
             
             <div className={styles.cardActions}>
                <button className={styles.secondaryAction}>Track</button>
-               <button className={styles.primaryAction}>Manage Details</button>
+               <Link to={`/owner/fleet/manage/${bus.id}`} className={styles.primaryAction} style={{ textDecoration: 'none', display: 'flex', justifyContent: 'center' }}>Manage Details</Link>
             </div>
           </div>
         ))}
