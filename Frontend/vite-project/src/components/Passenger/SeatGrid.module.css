@@ -1,0 +1,120 @@
+/* SeatGrid.module.css */
+.gridContainer {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Creating an aisle space between columns 2 and 3 */
+.grid > *:nth-child(4n - 1) {
+  margin-left: 40px;
+}
+
+.seat {
+  width: 50px;
+  height: 60px;
+  border-radius: 8px 8px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: var(--surface);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), inset 0 2px 4px rgba(255,255,255,0.5);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 0 0 10px;
+  outline: none;
+}
+
+.seat::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 10%;
+  right: 10%;
+  height: 20px;
+  background: inherit;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.3);
+  z-index: 1;
+}
+
+.seatLabel {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-h);
+  z-index: 2;
+}
+
+.seatArmrest {
+  position: absolute;
+  top: 15px;
+  bottom: 10px;
+  left: -4px;
+  right: -4px;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.available {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+.available:hover {
+  transform: scale(1.1) translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.2);
+}
+
+.selected {
+  background: var(--primary);
+  border-color: var(--primary-hover);
+  color: white;
+  transform: scale(1.1) translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.3), inset 0 2px 4px rgba(255,255,255,0.3);
+}
+
+.selected .seatLabel {
+  color: white;
+}
+
+.selected .seatArmrest {
+  border-color: rgba(255,255,255,0.3);
+}
+
+.booked, .locked {
+  background: var(--border);
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.booked .seatLabel, .locked .seatLabel {
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .seat {
+    width: 40px;
+    height: 50px;
+  }
+  
+  .grid {
+    gap: 12px;
+  }
+  
+  .grid > *:nth-child(4n - 1) {
+    margin-left: 20px;
+  }
+}

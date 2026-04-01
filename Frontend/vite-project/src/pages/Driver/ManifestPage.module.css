@@ -1,0 +1,214 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  max-width: 900px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.backBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-4px);
+}
+
+.tripBadge {
+  background: var(--primary);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.city {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--primary);
+}
+
+.navIcon {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+}
+
+.stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(99, 102, 241, 0.1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 0 2rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.listTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.countBadge {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer {
+  padding: 2rem;
+  background: var(--bg-main);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+.startBtn {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.started {
+  background: #22c55e;
+  cursor: default;
+}
+
+.started:hover {
+  background: #16a34a;
+  transform: none;
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--text-muted);
+}
+
+.busIcon {
+  width: 64px;
+  height: 64px;
+  color: var(--primary);
+  animation: dash 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes dash {
+  from { transform: translateX(-20px); opacity: 0.5; }
+  to { transform: translateX(20px); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .city {
+    font-size: 1.75rem;
+  }
+  .route {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .divider {
+    transform: rotate(90deg);
+  }
+}

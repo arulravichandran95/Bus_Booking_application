@@ -1,0 +1,184 @@
+/* TripCard.module.css */
+.card {
+  background: var(--surface);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 24px;
+  border-bottom: 1px dashed var(--border);
+  background: rgba(139, 92, 246, 0.03);
+}
+
+.busInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.busInfo h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text-h);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.typeBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-h);
+  line-height: 1;
+}
+
+.priceLabel {
+  font-size: 0.75rem;
+  color: var(--text);
+  margin-top: 4px;
+}
+
+.body {
+  padding: 24px;
+  flex: 1;
+}
+
+.timeInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.timeBlock:last-child {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.time {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.location {
+  font-size: 0.875rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.duration {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.durationText {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.path {
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+  position: relative;
+}
+
+.stopsText {
+  font-size: 0.7rem;
+  color: var(--text);
+  margin-top: 8px;
+}
+
+.footer {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--code-bg);
+  border-top: 1px solid var(--border);
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.available {
+  background: var(--success);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.fewSeats {
+  background: var(--warning);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
