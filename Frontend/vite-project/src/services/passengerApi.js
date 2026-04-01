@@ -1,119 +1,67 @@
-// import axios from 'axios';
+import apiClient from './apiClient';
 
-// const api = axios.create({
-//   baseURL: '/api/v1',
-// });
-
-// MOCK API LAYER
-// Returns hardcoded promises so the app functions fully without a backend.
-// To use real backend, uncomment the axios lines above and restore the old `passengerApi`.
-
-const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+// ============================================================================
+// REAL API LAYER — Uses the shared apiClient (axios) with JWT interceptor.
+// All calls hit real backend endpoints.
+// ============================================================================
 
 export const passengerApi = {
+
+  // ✅ REAL — POST /api/v1/auth/login
   login: async (credentials) => {
-    await delay(800);
-    // Automatically accept any credentials
-    return { data: { token: 'mock-jwt-token-12345', role: credentials.role } };
-  },
-
-  searchTrips: async (from, to, date) => {
-    await delay(1000);
-    return {
-      data: [
-        { tripId: 101, busName: 'Royal Travels', source: from, destination: to, departureTime: '21:00', arrivalTime: '05:30', duration: '8h 30m', price: 950, type: 'A/C Sleeper', seatsAvailable: 12 },
-        { tripId: 102, busName: 'KPN Travels', source: from, destination: to, departureTime: '22:30', arrivalTime: '06:00', duration: '7h 30m', price: 850, type: 'Non A/C Semi-Sleeper', seatsAvailable: 5 },
-        { tripId: 103, busName: 'IntrCity SmartBus', source: from, destination: to, departureTime: '23:15', arrivalTime: '06:45', duration: '7h 30m', price: 1100, type: 'Volvo Multi-Axle A/C', seatsAvailable: 24 },
-        { tripId: 104, busName: 'SRS Travels', source: from, destination: to, departureTime: '18:00', arrivalTime: '02:00', duration: '8h 00m', price: 600, type: 'Non A/C Seater', seatsAvailable: 30 }
-      ]
-    };
-  },
-
-  getSeatStatus: async (tripId) => {
-    await delay(800);
-    // Generate a beautiful mock 40 seat layout
-    const mockSeats = Array.from({length: 40}, (_, i) => {
-      let status = 'AVAILABLE';
-      if (i === 12 || i === 15 || i === 22 || i === 23) status = 'BOOKED';
-      if (i === 5 || i === 18) status = 'LOCKED'; // simulated locked by someone else
-      return { seatNumber: `${i+1}`, status };
+    const response = await apiClient.post('/auth/login', {
+      username: credentials.email,   // Backend expects "username" field
+      password: credentials.password,
     });
-    return { data: mockSeats };
+    return response;
   },
 
+  // ✅ REAL — GET /api/v1/routes/search?from=&to=&date=
+  searchTrips: async (from, to, date) => {
+    const response = await apiClient.get('/routes/search', {
+      params: { from, to, date },
+    });
+    return response;
+  },
+
+  // ✅ REAL — GET /api/v1/seats/status?tripId=
+  getSeatStatus: async (tripId) => {
+    const response = await apiClient.get('/seats/status', {
+      params: { tripId }
+    });
+    return response;
+  },
+
+  // ✅ REAL — POST /api/v1/seats/lock
   lockSeat: async (tripId, seatNumber) => {
-    await delay(600);
-    return { data: { lockId: `LOCK-${Date.now()}` } };
+    const response = await apiClient.post('/seats/lock', { tripId, seatNumber });
+    return response;
   },
 
+  // ✅ REAL — POST /api/v1/bookings/confirm
   confirmBooking: async (lockId, passengerDetails) => {
-    await delay(1200);
-    return { 
-      data: { 
-        bookingId: `BKG-${Math.floor(Math.random() * 90000) + 10000}`,
-        qrCode: "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=", // minimal transp base64
-        seatDetails: passengerDetails
-      }
-    };
+    const response = await apiClient.post('/bookings/confirm', {
+      lockId,
+      ...passengerDetails,
+    });
+    return response;
   },
 
+  // ✅ REAL — GET /api/v1/bookings
   getPassengerBookings: async () => {
-    await delay(600);
-    return {
-      data: {
-        upcoming: [
-          {
-            bookingId: "BKG-84729",
-            tripId: "101",
-            busName: "Royal Travels A/C Sleeper",
-            source: "Coimbatore (CBE)",
-            destination: "Chennai (CHN)",
-            date: "2026-04-10",
-            departureTime: "21:00",
-            seats: "A10, A11",
-            amount: 1900,
-            status: "CONFIRMED"
-          }
-        ],
-        past: [
-          {
-            bookingId: "BKG-29384",
-            tripId: "84",
-            busName: "KPN Travels Non-A/C Seater",
-            source: "Chennai (CHN)",
-            destination: "Madurai (IXM)",
-            date: "2026-03-15",
-            departureTime: "10:30",
-            seats: "C4",
-            amount: 750,
-            status: "COMPLETED"
-          },
-          {
-            bookingId: "BKG-11928",
-            tripId: "42",
-            busName: "IntrCity SmartBus",
-            source: "Bangalore (BLR)",
-            destination: "Coimbatore (CBE)",
-            date: "2026-02-28",
-            departureTime: "23:15",
-            seats: "L1, L2",
-            amount: 2200,
-            status: "CANCELLED"
-          }
-        ]
-      }
-    };
+    const response = await apiClient.get('/bookings');
+    return response;
   },
 
+  // ✅ REAL — DELETE /api/v1/bookings/{id}
   cancelBooking: async (bookingId) => {
-    await delay(800);
-    return { data: { success: true, message: `Booking ${bookingId} has been canceled successfully.` } };
+    const response = await apiClient.delete(`/bookings/${bookingId}`);
+    return response;
   },
 
+  // ✅ REAL — GET /api/v1/routes/trip/{id}/status
   getTripStatus: async (tripId) => {
-    // Randomize status for demo
-    const statuses = ['SCHEDULED', 'IN_PROGRESS'];
-    const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
-    return { data: { status: randomStatus } };
+    const response = await apiClient.get(`/routes/trip/${tripId}/status`);
+    return response;
   },
-};
+};

@@ -17,6 +17,8 @@ public interface SeatStatusRepository extends JpaRepository<SeatStatus, Long> {
 
     long countByTripId(Long tripId);
     
+    List<SeatStatus> findByTripId(Long tripId);
+    
     long countByTripIdAndStatus(Long tripId, String status);
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)

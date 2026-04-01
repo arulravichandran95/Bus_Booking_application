@@ -41,4 +41,10 @@ public class SeatController {
             throw ex;
         }
     }
+
+    @GetMapping("/status")
+    public ResponseEntity<java.util.List<booking.dto.SeatStatusDTO>> getSeatStatus(@RequestParam("tripId") Long tripId) {
+        java.util.List<booking.dto.SeatStatusDTO> statusMap = seatLockService.getSeatStatusMap(tripId);
+        return ResponseEntity.ok(statusMap);
+    }
 }

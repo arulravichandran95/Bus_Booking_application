@@ -15,4 +15,6 @@ public interface BookingRepository extends JpaRepository<Booking, Long> {
 
     @Query("SELECT SUM(b.totalPaid) FROM Booking b WHERE b.trip.id = :tripId AND b.status = :status")
     Double sumRevenueByTripIdAndStatus(@Param("tripId") Long tripId, @Param("status") String status);
+
+    List<Booking> findByPassengerIdOrderByBookingTimestampDesc(Long passengerId);
 }

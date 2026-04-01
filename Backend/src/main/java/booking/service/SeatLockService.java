@@ -69,4 +69,12 @@ public class SeatLockService {
             }
         }
     }
+
+    @Transactional(readOnly = true)
+    public List<booking.dto.SeatStatusDTO> getSeatStatusMap(Long tripId) {
+        return seatStatusRepository.findByTripId(tripId)
+                .stream()
+                .map(seat -> new booking.dto.SeatStatusDTO(seat.getSeatNumber(), seat.getStatus()))
+                .toList();
+    }
 }
