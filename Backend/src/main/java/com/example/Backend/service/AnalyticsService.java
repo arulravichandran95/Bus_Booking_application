@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 
+// Indicates that this class is a "Service", originally defined by DDD as an operation offered as an interface that stands alone in the model, with no encapsulated state.
 @Service
+// LOMBOK CONSTRUCTOR: Generates a constructor for all final fields, enabling constructor-based dependency injection
 @RequiredArgsConstructor
 public class AnalyticsService {
 

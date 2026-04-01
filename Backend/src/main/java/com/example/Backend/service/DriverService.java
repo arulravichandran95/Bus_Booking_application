@@ -12,13 +12,16 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// Indicates that this class is a "Service", originally defined by DDD as an operation offered as an interface that stands alone in the model, with no encapsulated state.
 @Service
+// LOMBOK CONSTRUCTOR: Generates a constructor for all final fields, enabling constructor-based dependency injection
 @RequiredArgsConstructor
 public class DriverService {
 
     private final BookingRepository bookingRepository;
     private final TripRepository tripRepository;
 
+    // Defines the scope of a single database transaction. ReadOnly optimization is applied here.
     @Transactional(readOnly = true)
     public List<DriverManifestDTO> getManifestForTrip(Long tripId) {
         // Fetch bookings for the given trip that are confirmed
@@ -34,6 +37,7 @@ public class DriverService {
                 .collect(Collectors.toList());
     }
 
+    // Defines the scope of a single database transaction for read/write operations.
     @Transactional
     public void updateTripStatus(Long tripId, String status) {
         if (!"IN_PROGRESS".equalsIgnoreCase(status) && !"COMPLETED".equalsIgnoreCase(status)) {
