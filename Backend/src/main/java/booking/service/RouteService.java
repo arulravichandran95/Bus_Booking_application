@@ -28,4 +28,14 @@ public class RouteService {
             return dto;
         }).collect(Collectors.toList());
     }
+
+    @Autowired
+    private booking.repository.TripRepository tripRepository;
+
+    public String getTripStatus(Long tripId) {
+        return tripRepository.findById(tripId)
+                .map(booking.model.Trip::getStatus)
+                .orElseThrow(() -> new org.springframework.web.server.ResponseStatusException(
+                        org.springframework.http.HttpStatus.NOT_FOUND, "Trip not found"));
+    }
 }

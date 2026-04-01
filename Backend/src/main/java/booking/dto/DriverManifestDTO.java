@@ -4,6 +4,7 @@ package booking.dto;
  * Data Transfer Object representing a passenger's manifest details for a driver.
  * It contains information about a specific booking to be displayed to the driver.
  */
+
 public class DriverManifestDTO {
     private String bookingId;
     private String seatNumber;

@@ -30,4 +30,14 @@ public class BookingController {
 
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
+
+    @GetMapping
+    public ResponseEntity<booking.dto.PassengerBookingsDTO> getPassengerBookings() {
+        return ResponseEntity.ok(bookingService.getPassengerBookings());
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<java.util.Map<String, Object>> cancelBooking(@PathVariable("id") String bookingId) {
+        return ResponseEntity.ok(bookingService.cancelBooking(bookingId));
+    }
 }
